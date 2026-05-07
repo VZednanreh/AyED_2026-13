@@ -10,27 +10,19 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            double temperatura;
-            double contador = 0;
-            for (int x= 1; x <= 7; x++)
+            Console.WriteLine("Ingrese uno de los siguientes idiomas:");
+            Console.WriteLine("1 = ingles");
+            Console.WriteLine("2 = Frances");
+            Console.WriteLine("3 = aleman");
+            Console.Write("Ingrese el idioma deseado: ");
+            string opcion = Console.ReadLine(); 
+            switch (opcion)
             {
-                Console.Write("Ingrese la temperatura del dia " + x + ".");
-                temperatura = double.Parse(Console.ReadLine());
-                double acumuladorTemp = 0;
-                acumuladorTemp = acumuladorTemp + temperatura;
-                if (temperatura < 0)
-                {
-                    contador++;
-                }
+                case "1": Console.WriteLine("Hello."); break;
+                case "2": Console.WriteLine("Salut.");  break;
+                case "3": Console.WriteLine("Hallo.");  break;
+                default: Console.WriteLine("Su eleccion no existe."); break;
             }
-            //Console.Write("Ingrese la temperatura del dia " + x + ".");
-            //temperatura = double.Parse(Console.ReadLine());
-            //double acumuladorTemp = 0;
-            //acumuladorTemp = acumuladorTemp + temperatura;
-            //if (temperatura < 0)
-            //{
-            //    contador++;
-            //}
         }
     }
 }
