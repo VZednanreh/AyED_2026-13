@@ -24,7 +24,14 @@ namespace ConsoleApplication3
                     contador++;
                 }
                 acumuladorTotalTemp = acumuladorTemp;
-                Console.WriteLine("la suma de todas las temperaturas de cada dia por ahora es de " + acumuladorTotalTemp + " y hubo " + contador + " dias que la temperatura fue menor a 0°.");
+                if (x == 7)
+                {
+                    Console.WriteLine("La suma de todas las temperaturas de cada dia fueron de " + acumuladorTotalTemp + " y hubo " + contador + " dias que la temperatura fue menor a 0°.");
+                }
+                else
+                {
+                    Console.WriteLine("la suma de todas las temperaturas de cada dia por ahora es de " + acumuladorTotalTemp + " y hubo " + contador + " dias que la temperatura fue menor a 0°.");
+                }
             }
         }
     }
