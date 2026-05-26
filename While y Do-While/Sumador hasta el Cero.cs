@@ -10,19 +10,25 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            Console.Write("ingrese el dinero a para guardar: ");
-            int numero = int.Parse(Console.ReadLine());
-            int alcancia= 0;
+            int contador = 1;
+            int acumulador = 0;
+            Console.Write("Ingrese la nota del alumno N°" + contador + ": ");
+            int nota = int.Parse(Console.ReadLine());
+            acumulador = acumulador + nota;
+            int promedio = acumulador / 5;
+            contador++;
             do
             {
-                if (numero > 0)
+                if (contador <= 5)
                 {
-                    alcancia += numero;
-                    Console.Write("ingrese el dinero a para guardar: ");
-                    numero = int.Parse(Console.ReadLine());
+                    Console.Write("Ingrese la nota del alumno N°" + contador + ": ");
+                    nota = int.Parse(Console.ReadLine());
+                    contador++;
+                    acumulador = acumulador + nota;
+                    promedio = acumulador / 5;
                 }
-            } while (numero > 0);
-            Console.WriteLine("El total guardado fue de: " + alcancia);
+            } while (contador <= 5);
+            Console.WriteLine("El promedio de todos los alumnos fue de: " + promedio);
         }
     }
 }
