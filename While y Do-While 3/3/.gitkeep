@@ -1,0 +1,40 @@
+        int SumaEdades = 0;
+        int contadorTotal = 0;
+        int mayoresDeEdad = 0;
+        int menoresDeEdad = 0;
+        int edad = 0; 
+        Console.WriteLine("Ingrese las edades de las personas. Para finalizar, ingrese un número negativo (ej: -1).\n");
+
+        while (edad >= 0)
+        {
+            Console.Write("Ingrese la edad: ");
+            edad = int.Parse(Console.ReadLine());
+            if (edad >= 0)
+            {
+                sumaEdades += edad;
+                contadorTotal++;
+
+                if (edad >= 18)
+                {
+                    mayoresDeEdad++;
+                }
+                if (edad < 18)
+                {
+                    menoresDeEdad++;
+                }
+            }
+        }
+
+        if (contadorTotal > 0)
+        {
+            double promedio = (double)sumaEdades / contadorTotal;
+
+            Console.WriteLine("Promedio de edad: " + promedio + "años.);
+            Console.WriteLine("Personas mayores de edad (18+): " + mayoresDeEdad);
+            Console.WriteLine("Personas menores de edad: " + menoresDeEdad);
+        }
+        
+        if (contadorTotal == 0)
+        {
+            Console.WriteLine("No se registraron edades válidas.");
+        }
