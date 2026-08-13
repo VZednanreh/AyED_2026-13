@@ -18,7 +18,6 @@ namespace ConsoleApplication3
                 precios[i] = Convert.ToDouble(Console.ReadLine());
             }
 
-            Console.WriteLine();
             Console.Write("Ingrese el dinero disponible del cliente: ");
             double dinero = Convert.ToDouble(Console.ReadLine());
             for (int i = 0; i < 8; i++)
