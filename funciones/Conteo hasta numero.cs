@@ -11,12 +11,6 @@ namespace ConsoleApplication2
         
         static void ContarHasta(int n)
         {
-            if (n <= 0)
-            {
-                Console.WriteLine("Ingresa un numero entero positivo.");
-                return;
-            }
-
             for (int i = 1; i <= n; i++)
             {
                 Console.WriteLine(i);
