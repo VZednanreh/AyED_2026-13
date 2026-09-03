@@ -10,6 +10,10 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
+            codigo();
+        }
+        static void codigo()
+        {
             Console.Write("Ingrese la cantidad deseada de números: ");
             int cantidad = int.Parse(Console.ReadLine());
 
@@ -52,7 +56,6 @@ namespace ConsoleApplication5
                 }
             }
             Console.WriteLine("Segundo mayor: " + segundoMayor);
-            
         }
     }
 }
