@@ -16,23 +16,23 @@ namespace ConsoleApplication2
         {
             Console.Write("Ingrese un numero entero positivo: ");
             int numero = int.Parse(Console.ReadLine());
-            int sumaDivisores = 0;
+            int suma = 0;
             
             for (int i = 1; i < numero; i++)
             {
                 if (numero % i == 0)
                 {
-                    sumaDivisores += i;
+                    suma = suma + i;
                 }
             }
             
-            if (sumaDivisores == numero && numero > 0)
+            if (suma == numero && numero > 0)
             {
-                Console.WriteLine("El numero " + numero + " es un numero perfecto.");
+                Console.WriteLine("es un numero perfecto.");
             }
             else
             {
-                Console.WriteLine("El numero " + numero + " no es un numero perfecto.");
+                Console.WriteLine("no es un numero perfecto.");
             }
         }
     }
