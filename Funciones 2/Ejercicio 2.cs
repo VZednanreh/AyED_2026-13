@@ -10,6 +10,10 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
+            pipo();
+        }
+        static void pipo()
+        {
             Console.Write("Ingrese un numero entero positivo: ");
             int numero = int.Parse(Console.ReadLine());
             int sumaDivisores = 0;
