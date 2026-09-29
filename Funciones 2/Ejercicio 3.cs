@@ -41,6 +41,7 @@ namespace ConsoleApplication3
 
             for (int i = inicio; i <= fin; i++)
             {
+                Console.WriteLine(i + "");
                 acumulador += i;
 
                 if (i % 2 == 0)
